@@ -1,0 +1,28 @@
+# StudySpace — Prompt & Iteration Log
+BSERC GenAI Internship | Week 1 | Project 2 | Option 1: Revision & Learning Dashboard
+
+IMPORTANT DOCUMENTATION NOTE:
+The exact wording of the original prompts from the earlier chat was not recoverable in the current working context. The entries below are faithful reconstructed prompt summaries based on the implemented features and recorded iteration changes. They are not represented as verbatim historical transcripts. If the submission evaluator requires exact prompt transcripts, replace these reconstructed entries with the original prompts from the chat before final submission.
+
+## Prompt 1 — Initial build (reconstructed)
+Create a complete, polished, responsive Revision & Learning Dashboard as one standalone HTML file. Embed all HTML, CSS and JavaScript in that file; do not require a framework, build process, server or external backend. The audience is a general student, using engineering subjects as sample data. Use a modern interface with both light and dark themes. Include an overview, subject management and topic progress, daily study goals, study-time logging, exam countdown, revision checklist, flashcards, a short quiz, study analytics/chart, local persistence and JSON data export. Provide at least five meaningful interactive elements. Ensure the interface works on laptop and mobile screens and clearly label any sample/demo data.
+
+## Prompt 2 — Improvement Round 1 (reconstructed)
+Review the first dashboard for misleading or inaccurate analytics. Do not show prefilled study minutes or a quiz average as if they were real user activity. Make totals, weekly study time, study-day counts and quiz averages reflect actual logged activity only. Use a rolling seven-day chart, make daily goal progress accurate, reset daily counters based on the calendar date, retain existing subject data and clearly distinguish sample subjects from real user activity. Keep the existing design, features, responsiveness and themes working.
+
+## Prompt 3 — Improvement Round 2 (reconstructed)
+Improve dashboard usability and accessibility. Add subject search by name and abbreviation; allow subjects to be edited and deleted with confirmation; allow revision tasks to be removed; support importing a valid JSON backup and reject invalid JSON safely. Ensure Escape closes an open modal, provide visible keyboard focus indicators, support reduced-motion preferences and make disabled controls behave clearly. Preserve existing user data and all working features.
+
+## Prompt 4 — Improvement Round 3 (reconstructed)
+Perform a final reliability and mobile-usability pass. Use the computer's local calendar date rather than UTC-derived date keys for daily tracking and countdown behavior. Calculate a true consecutive-day study streak rather than counting all study dates. Strengthen JSON import validation for the expected schema and reasonable field bounds; reject malformed records and duplicate subject names. Close the mobile sidebar when the user taps outside it. Preserve valid saved data, themes, navigation, flashcards, quiz and responsive layout. Avoid horizontal overflow on mobile.
+
+## Prompt 5 — Final QA (user-executed checklist)
+Verify: no JavaScript errors on load; local date/countdown; consecutive-day streak; duplicate-subject rejection; valid JSON import; invalid/malformed JSON rejection; persistence after refresh; outside-tap mobile sidebar dismissal; light/dark themes; all five navigation sections; flashcards and quiz; and no horizontal scrolling on mobile.
+
+## Version mapping
+- Initial build: `StudySpace_Revision_Learning_Dashboard.html`
+- Round 1: `StudySpace_Revision_Learning_Dashboard_Round1.html`
+- Round 2: `StudySpace_Revision_Learning_Dashboard_Round2.html`
+- Round 3 final: `StudySpace_Revision_Learning_Dashboard_Round3.html`
+
+Only the final Round 3 HTML is included in this package to avoid confusion about which version is the deliverable. Earlier versions remain in the development workspace.
